@@ -9,15 +9,85 @@ body {
 .content {
     width: 100%;
     max-width: 1200px;
-
     margin: 0 auto;
+    border: solid 1px green;
+    padding-top: 30px;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
 }
 
 .intro {
-
+    
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100vh;
-    background: url(../img/intro.jpg) center no-repeat;
+    background: url(../assets/img/intro.jpg) center no-repeat;
+}
+
+/* button Box */
+/*
+.blueBox {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    height: 10vh;
+    width: 10vw;
+    background-color: blue;
+
+    transition: linear 2s ;
+
+}
+
+.blueBox:hover {
+    background-color: purple;
+    opacity: 0.9;
+}
+
+.blueBox::after {
+    content: "❤";
+    font-size: 6vh;
+    font-weight: bold;
+    color: rgb(138, 68, 2);
+    position: relative;
+    top: 2vh;
+    left: 4vw;
+    opacity: 0;
+    transition: linear 2s ;
+}
+
+.blueBox:hover::after {
+    content: "❤";
+    font-size: 6vh;
+    font-weight: bold;
+    color: rgb(138, 68, 2);
+    position: relative;
+    top: 2vh;
+    left: 4vw;
+    opacity: 1;
+}
+*/
+
+/* Header */
+.header {
+    position: absolute;
+    border: solid 2px red;
+    width: 100%;
+    max-width: 80vw;
+    left: 10vw;
+    z-index: 1000;
+}
+
+.header__logo {
+    font-size: 40px;
+    font-family: 'Reggae One', cursive;
+    color: purple;
+}
+
+.header__Navigation {
+    font-size: 30px;
+    text-transform: uppercase;
 }
